@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import About from './About'
+import AdminHome from './Admin/AdminHome'
 import Cart from './Cart'
 import Checkout from './Checkout'
 import Contact from './Contact'
@@ -9,6 +10,7 @@ import Home from './Home'
 import Navbar from './Navbar'
 import Shop from './Shop'
 import SingleProductPage from './SingleProductPage'
+
 
 export default function App() {
     return (
@@ -22,8 +24,12 @@ export default function App() {
                     <Route path='/contact' element={<Contact/>} />
                     <Route path='/Cart' element={<Cart/>} />
                     <Route path='/Checkout' element={<Checkout/>} />
-                    <Route path='/single-product-page' element={<SingleProductPage/>} />
+                    <Route path='/single-product-page' element={<SingleProductPage/>}/>
                     
+                    
+
+
+                    <Route path='/admin-home' element={<AdminHome/>} />
                     
                 </Routes>
             </BrowserRouter>
